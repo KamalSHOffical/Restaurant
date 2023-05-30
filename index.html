@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Kamal's Restaurant 🍲">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="author" content="Kamal Shawer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamal's Restaurant 🍲</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+
+<body>
+    <header>
+        <div class="title-section">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo">
+            </div>
+            <h1>Kamal's Restaurant</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <main>
+        <section>
+            <form class="food-form">
+                <h2 class="mb" style="text-align: center;">Add new food form</h2>
+                <label for="name">Food Name:</label>
+                <input class="mb" type="text" id="food-name" name="food-name" required>
+                <label for="email">Food type:</label>
+                <select class="mb" name="food-type" id="food-type">
+                    <option value="Fruit and vegetables">Fruit and vegetables</option>
+                    <option value="Starchy food">Starchy food</option>
+                    <option value="Dairy">Dairy</option>
+                    <option value="Protein">Protein</option>
+                    <option value="Fat">Fat</option>
+                </select>
+                <label for="message">Price:</label>
+                <input class="mb" type="number" id="food-price" name="food-price" min="1" max="1000" required>
+                <input type="button" value="Submit" id="submit-button">
+            </form>
+        </section>
+        <section class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="food-table-body"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023 <img src="assets/logo.png"/> <span class="font1">Kamal's Restaurant</span> All rights reserved.<br />
+        <a href="https://www.linkedin.com/in/kamal-shawer-566714210"><img src="assets/linkedin.png" alt="Linkedin"></a>
+        <a href="https://github.com/KamalSHOffical"><img src="assets/github.png" alt="Github"></a>
+    </footer>
+    <script src="JS/app.js"></script>
+</body>
+
+</html>

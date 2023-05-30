@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header & body */
+header {
+    text-align: center;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title Section */
+.title-section {
+    background-color: #4C3D3D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo */
+.logo {
+    margin-right: 10px;
+}
+
+.logo img {
+    width: 75px;
+    height: 75px;
+}
+
+/* Title */
+h1 {
+    font-family: Sofia, cursive;;
+    color: #FFF;
+    margin: 0;
+    cursor: default;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    background-color: #C07F00;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF7D4;
+    margin: 0 10px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/*  Main Content */
+main {
+    
+    padding: 20px;
+    background-color: #FFF7D4;
+    color: #4C3D3D;
+}
+
+main h1,h2 {
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+thead {
+    background-color: #4C3D3D;
+    color: #FFF;
+}
+
+table td .borderless {
+    border: 0px;
+}
+
+/* Form */
+
+.food-form {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mb {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="button"] {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #7d3030;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #FFD95A;
+    color: #7d3030;
+}
+
+/* Footer */
+footer {
+    background-color: #FFD95A;
+    padding: 10px;
+    text-align: center;
+}
+
+footer span {
+    font-family: Sofia, cursive;
+    font-weight: bold;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+footer a {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
