@@ -34,7 +34,7 @@ Food.prototype.generateUniqueId = function () {
     return id;
 };
 */
-let id = 999;
+let id = 1000;
 // Generate unique 4-digits ID
 Food.prototype.generateUniqueId = function () {
 
