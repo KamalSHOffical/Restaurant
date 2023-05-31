@@ -13,7 +13,7 @@ Food.prototype.foodItems = [];
 
 // Create an instance of Food
 let foodInstance = new Food();
-
+/*
 // Array to store each generated id 
 const generatedIds = [];
 
@@ -33,6 +33,20 @@ Food.prototype.generateUniqueId = function () {
     generatedIds.push(id);
     return id;
 };
+*/
+let id = 999;
+// Generate unique 4-digits ID
+Food.prototype.generateUniqueId = function () {
+
+    if (id === 9999) {
+        alert("You have reached the maximum allowed numbers of items!")
+        return null;
+    } else {
+        id += 1;
+        return id;
+    }
+
+};
 
 // Add food to the table method
 Food.prototype.addFoodItem = function () {
@@ -41,10 +55,15 @@ Food.prototype.addFoodItem = function () {
     let foodPrice = document.getElementById('food-price').value;
 
     let foodId = this.generateUniqueId();
-    let food = new Food(foodId, foodName, foodType, foodPrice);
 
-    this.foodItems.push(food);
-    this.renderFoodItems();
+    if (foodId === null) {
+        // Do nothing
+    } else {
+        let food = new Food(foodId, foodName, foodType, foodPrice);
+        this.foodItems.push(food);
+        this.renderFoodItems();
+    }
+
 };
 
 // Method to display food items in a table
